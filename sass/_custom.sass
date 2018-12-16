@@ -1,0 +1,305 @@
+// start of the main content styling 
+
+body
+ font-family: 'Roboto', sans-serif
+ margin : 0
+ padding : 0
+ background-color : #fafafa
+
+*
+ line-height : 1.6
+ letter-spacing : 0.5px
+ word-spacing : 3px 
+
+
+.navbar 
+ padding : 15px 30px
+ border-radius: 0
+ background-color : lighten(#4d2486, 5%) !important 
+ .navbar-brand
+  color : #fff
+ .navbar-nav
+  .nav-item
+   .nav-link
+    color : #fff
+.form-control
+ width : 400px !important
+ height : 50px
+ background-color : darken(#4d2486, 2%) !important 
+ outline: none
+ border : none !important
+ border-radius: 0
+ color : #fafafa !important
+
+.header 
+ width : 100%
+ height : 500px
+ margin-top: 40px 
+ .container
+  padding : 0
+  border-radius: 4px
+  overflow: hidden
+  box-shadow : 0px 0px 1px rgba(0, 0, 0, 0.2 )
+ 
+ .brand-image
+  background :
+   image : url(../img/back1.jpg)
+   repeat : no-repeat
+   size : cover
+  height : 350px
+  width : 100%
+  box-sizzing : border-box
+ .user-info-box
+  display: flex
+  height : 130px
+  margin-bottom: 20px 
+  background-color: #fff
+  align-items: center 
+  position: relative
+  overflow: visible
+  margin-bottom : -20px 
+  .user-info
+   width : 14.25%
+   flex-wrap: wrap
+   text-align: center
+   color : darken(#ccc, 20%)
+  .user-img
+   margin-top: -100px
+   strong
+    color : darken(#ccc, 20%)
+   p
+    color : darken(#ccc, 40%)
+   img
+    width : 130px 
+    height : 130px
+    border-radius: 50%
+    border : 4px solid #fff
+    filter: drop-shadow(0 5px 0.75rem rgba(0, 0, 0, 0.3))
+    margin-bottom: 10px
+
+
+.post-col-1
+ height : 900px  
+ padding : 20px 30px
+ background-color : #fff
+ box-shadow : 0px 0px 1px rgba(0, 0, 0, 0.2 )
+ .heading
+  h3
+   font:
+    size : 15px 
+    weight : 600
+  padding : 20px 10px
+  border-bottom : 1px solid #ccc
+ .about-content 
+  padding : 10px
+  margin-top : 30px
+  strong 
+   font :
+    size : 13px
+    weight : 600
+
+  p
+   font: 
+    size : 13px
+   opacity : 0.6
+  span
+   display: block 
+   margin : 0px auto
+   padding: 4px  
+   font-size : 12px
+   text-align: center 
+   color : #fff
+   cursor: pointer
+   
+  
+  .fb
+   background-color: #5255a7
+   &:hover
+    background-color: darken(#5255a7,10%)
+  .tw
+   background-color: #45baf2
+   &:hover
+    background-color: darken(#45baf2,10%)
+  .dri
+   background-color: #ff1988
+   &:hover
+    background-color: darken(#ff1988,10%)
+   
+ 
+.post-col-2
+ background-color : #fff
+ box-shadow : 0px 0px 1px rgba(0, 0, 0, 0.2 )
+ padding : 20px 30px
+ margin-bottom : 20px
+ .post-header
+  display : flex
+  align-items : center 
+
+  img 
+   height : 60px 
+   width  : 60px 
+   border-radius : 50%
+    
+  strong 
+   margin-left : 10px 
+   font :
+    size : 14px    
+  
+  span
+   margin-left : 250px
+   display : inline
+
+ .post-content 
+  margin-top : 30px 
+  font: 
+    size : 14px
+  opacity : 0.6
+ .post-footer
+  border-top : 1px solid #e2e2e2
+  padding-top : 20px
+  margin-top : 10px
+  color : darken(#ccc, 20%)
+  transition: 300ms ease
+  cursor: pointer
+  p
+   font:
+    size : 16px
+   &:hover
+    color: $sub-color3
+   &:focus
+    color: $sub-color3
+   &:active
+    color: $sub-color3
+
+.post-col-3
+ background: 
+  color: #ffffff
+ height : 700px
+ box-sizing: border-box
+ box-shadow : 0px 0px 1px rgba(0, 0, 0, 0.2 )
+ .heading-2
+  h3
+   font:
+    size : 15px 
+    weight : 600
+  padding : 20px 10px
+  border-bottom : 1px solid #ccc
+ .about-content-2
+  padding : 10px
+  margin-top : 30px
+  h3
+   font :
+    size : 19px
+    weight : 300
+   color : darken(#ccc, 35%)
+   line-height: 1.4
+   &:hover
+    color : $sub-color3
+  p
+   font :
+    size : 15px
+    weight : 300
+   color : darken(#ccc, 20%)
+   line-height: 1.5
+
+
+
+.more
+ width : 80px
+ height: 80px 
+ background-color : darken(#e2e2e2, 10%)
+ margin : 40px auto      
+ border-radius: 50%
+ display: flex
+ align-items: center
+ a
+  color : #fff
+  text-align: center
+  margin : 0px auto
+  font-size: 18px
+
+
+
+@media (max-width : 767px)
+ .post-col-1
+  order: 2
+  margin : 20px 
+  height : 700px !important
+ .post-col-3 
+  margin : 20px
+  height : 700px !important
+ .header 
+  .brand-content
+   grid-template-columns: repeat(3, auto)
+   li
+    width : 100%
+ .user-info
+  width : 27.25% !important
+ .user-img
+  width : 100% !important
+  order : 7
+
+
+.footer
+ color : #ffffff
+ padding: 15px 0
+ text-align: center 
+ background: darken(#cccccc, 20%)
+ font: 
+  size : 13px
+  weight : 300
+  
+
+
+
+@media (max-width : 995px)
+ .post-col-1
+  height : 1050px
+ .post-col-3
+  height : 800px
+ .user-info-box
+  padding: 20px 
+ .user-info
+  width : 33.33% !important
+ .user-img
+  width : 100% !important
+  order : 7
+  position: relative !important 
+  top : -200px !important 
+ .caption
+  strong
+   color : #fff !important 
+  p
+   color : lighten(#ccc, 5%) !important
+ .header 
+  padding: 20px
+ .brand-image 
+  height : 300px !important 
+ .form-control
+  width : 100% !important 
+  
+
+@media (max-width : 513px)
+ .post-header 
+  span
+    margin-left : 50px !important
+
+
+
+/* place holder text color */
+
+::placeholder /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: darken(#ccc, 30%) !important
+
+::-ms-input-placeholder /* Internet Explorer 10-11 */
+   color: #fff !important
+
+
+::-ms-input-placeholder  /* Microsoft Edge */
+   color: #fff !important
+
+/* color for text selections */
+
+::selection 
+   color : lighten(#000, 10%)
+   background-color: darken(#fcffd8, 20%)
